@@ -1,0 +1,14 @@
+{
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.showStopIconInEditorTitleMenu": true,
+    "code-runner.showRunIconInEditorTitleMenu": true,
+    "code-runner.showRunCommandInExplorerContextMenu": true,
+    "json.format.enable": true,
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}
