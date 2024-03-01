@@ -9,6 +9,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "map": "cpp"
     }
 }
