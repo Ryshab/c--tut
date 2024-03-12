@@ -15,7 +15,7 @@ engine.setProperty('voice', voices[1].id)
 #     engine.runAndWait()
 
 # testing 
-engine.say("and those were seen dancing were thought to be insane who could not hear the music") 
+engine.say("loda ley ley") 
 # engine.say("kya pehena hay") 
  
 engine.runAndWait() 
