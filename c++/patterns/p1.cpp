@@ -251,9 +251,9 @@ void pattern14(int n)
 {
     for (int i = n; i > 0; i--)
     {
-            int s=65;
+        int s = 65;
         for (int j = i; j > 0; j--)
-        {   
+        {
             char ch = s;
             cout << ch << " ";
             s++;
