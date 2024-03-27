@@ -286,6 +286,44 @@ void pattern16(int n)
     }
 }
 
+void pattern17(int n)
+{
+    cout << "\nThis is pattern6" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = (n - i); j > 1; j--)
+        {
+            cout << " ";
+        }
+        char ch = 64;
+        for (int k = 0; k < (2 * (i + 1) - 1); k++)
+        {
+            if (k >= i + 1)
+            {
+                ch = ch - 1;
+            }
+            else
+            {
+                ch = ch + 1;
+            }
+            cout << ch;
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+void pattern18(int n)
+{
+    for (int i = 1; i <=n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            char ch = 64 + (n -i+j);
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
 /*
 //pseudocode
 
@@ -309,5 +347,7 @@ int main()
     // pattern13(n);
     // pattern14(n);
     // pattern15(n);
-    pattern16(n);
+    // pattern16(n);
+    // pattern17(n);
+    pattern18(n);
 }

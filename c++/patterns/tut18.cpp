@@ -13,7 +13,7 @@ void palin(string s, int i = 0)
         return;
     }
     // check for palindrome
-    else if (s[i] == s[t - 1-i])
+    else if (s[i] == s[t - 1 - i])
     {
         palin(s, i + 1);
     }
