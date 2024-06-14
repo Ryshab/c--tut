@@ -314,20 +314,117 @@ void pattern17(int n)
 }
 void pattern18(int n)
 {
-    for (int i = 1; i <=n; i++)
+    for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= i; j++)
         {
-            char ch = 64 + (n -i+j);
+            char ch = 64 + (n - i + j);
             cout << ch << " ";
         }
         cout << endl;
     }
 }
-/*
-//pseudocode
 
-*/
+void pattern19(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i; j < n; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < 2 * i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = i; j < n; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = (2 * (n - i - 1)); j > 0; j--)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+void pattern20(int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = (2 * (n - i - 1)); j > 0; j--)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = i; j < n; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < 2 * i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = i; j < n; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+}
+
+void pattern21(int n)
+{
+    int count=(n+1)/2;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (j <= (n - 1) / 2)
+            {
+                if (j >=i)
+                {
+                    cout << count;
+                    count--;
+                }
+                if (i>j){
+                    cout<<count;
+                    count++;
+                }
+            }
+            
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
@@ -349,5 +446,7 @@ int main()
     // pattern15(n);
     // pattern16(n);
     // pattern17(n);
-    pattern18(n);
+    // pattern18(n);
+    // pattern19(n);
+    pattern21(n);
 }
